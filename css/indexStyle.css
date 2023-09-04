@@ -1,0 +1,70 @@
+.content-box{
+    margin-top: 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    padding:100px;
+    position: relative;
+}
+
+/*右边图片*/
+.content-right{
+    width:50%;
+    height:auto;
+}
+.content-right > img{
+    width:100%;
+    min-width:400px;
+    max-width:800px;
+}
+.content-name{
+    font-family: PingFang SC;
+    font-weight: 400;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+.content-title{
+    display: inline;
+    font-family: PingFang SC;
+    font-weight: 700;
+    font-size: 80px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+.content-value{
+    width:400px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+}
+/*切换图片*/
+.content-img-button{
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+.img-button{
+    height:55px;
+    padding:0px 20px;
+    background-color: #1B8FF4;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.img-button:hover{
+    cursor: pointer;
+}
+.img-button:active{
+    scale: 0.9;
+}
+.img-button > p{
+    color:white;
+    font-family: PingFang SC;
+    font-weight: 700;
+    font-size: 16px;
+    padding:0;
+    margin:0;
+}

@@ -1,0 +1,114 @@
+
+.content-box{
+    margin-top: 57px;
+    flex:1;
+    width: 100%;
+    background-color: #57a6eb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form-box{
+    width:40%;
+    min-width: 300px;
+    max-width: 410px;
+    padding:50px 50px;
+    margin:auto;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 10px;
+    opacity: 0.6;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.1);
+}   
+
+/**每一个填写css*/
+.form-item{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    column-gap: 20px;
+    
+}
+/*姓名表单*/
+.name-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.name-box > input{
+    height:25px;
+    width:200px;
+    border-radius: 20px;
+    outline:none;
+    border:2px solid black;
+    padding-left:10px;
+}
+.name-box > input::placeholder{
+    color: var(--placeholder-color);
+    font-size: 16px;
+}
+/*性别表单*/
+
+.check-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/*日期表单*/
+.date-box > input{
+    border-radius: 7px;
+    outline:none;
+    border:none;
+}
+/*手机号*/
+.phone-number-box > input{
+    height:25px;
+    width:200px;
+    border-radius: 20px;
+    outline:none;
+    border:2px solid black;
+    padding-left:10px;
+}
+.phone-number-box > input::placeholder{
+    color: var(--placeholder-color);
+    font-size: 16px;
+}
+.submit-button{
+    width:75px;
+    height:30px;
+    border-radius: 20px;
+    background-color: #1B8FF4;
+    border:2px solid white;
+    align-self: center;
+    color:white
+}
+.submit-button:hover{
+    cursor: pointer;
+}
+.submit-button:active{
+    scale: 0.9;
+}
+/*提示信息*/
+.notice-p{
+    display: inline;
+    padding: 0;
+    margin:0;
+    font-size: 16px;
+    color:red;
+    opacity: 0.7;
+}

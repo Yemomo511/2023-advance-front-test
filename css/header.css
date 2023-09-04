@@ -1,0 +1,76 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 98px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.header-left img{
+    height:42px;
+    margin-right:42px;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-box{
+    height:55px;
+    padding:0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon-box > a{
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 700;
+    color:black;
+    padding:0;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.icon-box > a:hover{
+    color:#1B8FF4;
+}
+/*选中状态下*/
+.icon-box-check{
+    border-bottom:2px solid #1B8FF4;
+    color:#1B8FF4
+}
+.icon-box-check > a{
+    color:#1B8FF4;
+    text-decoration: none;
+}
+
+.join-button{
+    height:55px;
+    padding:0px 20px;
+    background-color: #1B8FF4;
+    border:none;
+    outline:none;
+}
+.join-button > a{
+    color:white;
+    font-family: PingFang SC;
+    font-weight: 700;
+    font-size: 16px;
+}

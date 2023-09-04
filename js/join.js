@@ -11,7 +11,7 @@ phone.style.setProperty("--placeholder-color", "rgba(0,0,0,0.5)");
 const textArray = document.querySelectorAll(".notice-p");
 console.log(textArray);
 submit.addEventListener("click", () => {
-  const status = true;
+  let status = true;
   if (name.value.length == 0) {
     //修改name输入框的样式
     name.style.border = "1px solid red";

@@ -4,15 +4,15 @@ const imgUrl =[
 ]
 
 const switchButton = document.getElementById("switchButton")
+let cnt = 0
 switchButton.addEventListener("click",()=>{
     const img = document.getElementById("img")
     const nowSrc = img.getAttribute("src")
-    if (nowSrc==imgUrl[0]){
-        img.setAttribute("src",imgUrl[1])
-        console.log(img.getAttribute("src"))
-    }else{
-        console.log(img.getAttribute("src"))
-        img.setAttribute("src",imgUrl[0])
+    cnt++
+    if (cnt == imgUrl.length)  {
+        cnt=0
     }
+    img.setAttribute("src",imgUrl[cnt])
+    console.log(img.getAttribute("src"));
 })
 
